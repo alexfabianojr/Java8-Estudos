@@ -1,0 +1,34 @@
+
+Ex1:
+
+aBlockOfCode = public void perform() {
+                System.out.println("Hello World!");
+              }
+
+
+  - A visibilidade Public faz sentido dentro do contexto de uma classe
+  mas se uma funçao existe em isolamento nao faz sentido usa-lo
+  - O nome faz sentido para uma funçao isolada? que nao pode ser chamada (existir) fora dentro da pipeline?
+  - Precisamos definir o tipo de retorno? Nao! o java ira compreender o tipo de retorno pelo contexto
+
+  aBlockOfCode = ( ) -> System.out.println("Hello World!"));
+
+ Ex2:
+
+ greetingFunction = ( ) -> System.out.print ("Hello World!");
+
+ greet(greetingFunction);
+
+ public void greet(___) {
+    _________();
+ }
+
+ -Imperativo
+ doubleNumberFunction = public int double(int a) {
+    return a * 2;
+ }
+
+ -Functional
+ doubleNumberFunction = ( int a ) -> a * 2;
+
+ addFunction = ( int a, int b ) -> a + b;
